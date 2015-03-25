@@ -6,9 +6,13 @@
 Фреймворк автоматизации под Windows платформы. Бесплатно. Open-source. Selenium-based.
 
 ## Почему Winium?
-Вы имеете Selenium WebDriver для тестирования веб приложений, Appium для тестирования iOS и Android приложений. И теперь у вас есть Selenium-based инструмент для тестирования Windows приложений. В чем преимущества? Вот что говорит Appium:
+Уже есть Selenium WebDriver для тестирования веб приложений, Appium для тестирования iOS и Android приложений. А теперь появился и Selenium-based инструмент для тестирования Windows приложений. Какие он дает преимущества? Цитируя Appium:
 > - You can write tests with your favorite dev tools using any WebDriver-compatible language such as Java, Objective-C, JavaScript with Node.js (in promise, callback or generator flavors), PHP, Python, Ruby, C#, Clojure, or Perl with the Selenium WebDriver API and language-specific client libraries.
 > - You can use any testing framework.
+
+А по-русски можно?
+- Пишите тесты, используя ваши любимые инструменты, любой WebDriver-совместимый язык программирования, например, Java, Objective-C, JavaScript with Node.js, PHP, Python, Ruby, C#, Clojure, or Perl.
+- Используйте любой тестовый фреймворк.
 
 # Поддерживаемые платформы
 - Windows Desktop (WPF, WinForms) Apps
