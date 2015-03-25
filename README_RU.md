@@ -11,7 +11,7 @@
 > - You can use any testing framework.
 
 А по-русски можно?
-- Пишите тесты, используя ваши любимые инструменты, любой WebDriver-совместимый язык программирования, например, Java, Objective-C, JavaScript with Node.js, PHP, Python, Ruby, C#, Clojure, or Perl.
+- Пишите тесты, используя ваши любимые инструменты, любой WebDriver-совместимый язык программирования, например, Java, Objective-C, JavaScript with Node.js, PHP, Python, Ruby, C#, Clojure...
 - Используйте любой тестовый фреймворк.
 
 # Поддерживаемые платформы
