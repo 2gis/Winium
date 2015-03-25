@@ -1,3 +1,7 @@
+<p align="right">
+English description | <a href="README_RU.md">Описание на русском</a>
+</p>
+
 # Winium
 <p align="center">
 <img src="assets/winium.png" alt="Winium is Selenium Remote WebDriver implementations for automated testing on Windows platforms">
