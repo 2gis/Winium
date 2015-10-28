@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>2GIS</authors>
+    <owners>2GIS</owners>
+    <projectUrl>https://github.com/2gis/Winium</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <dependecies>
+      <dependency id="Selenium.WebDriver" version="[2.48.0]" targetFramework="net45" />
+    </dependecies>
+    <releaseNotes>
+    </releaseNotes>
+    <copyright>Copyright @ 2015</copyright>
+    <tags>Winium WebDriver C#</tags>
+  </metadata>
+</package>
