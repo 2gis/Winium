@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
@@ -12,7 +12,10 @@
       <dependency id="Selenium.WebDriver" version="[2.48.0]" />
     </dependencies>
     <releaseNotes>
-    </releaseNotes>
+v0.1.0
+- WebDriver .Net bindings for Winium
+- Exposes the service provided by the native WiniumDriver executable
+</releaseNotes>
     <copyright>Copyright @ 2015</copyright>
     <tags>Winium WebDriver C#</tags>
   </metadata>
