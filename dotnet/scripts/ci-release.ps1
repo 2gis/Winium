@@ -2,7 +2,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 #------------------------------
 
-Import-Module '.\setup.ps1' -Args (,('git', 'versioning', 'changelog', 'msbuild', 'nuget', 'github'))
+Import-Module '.\setup.ps1' -Args (,('git', 'versioning', 'changelog', 'msbuild', 'nuget'))
 
 $version = $env:release_version
 $description = $env:release_description
@@ -32,17 +32,14 @@ Invoke-Git ('add', $changelogPath) -Verbose
 Invoke-Git ('add', $nuspecPath) -Verbose
 
 # Git commit and push
-Invoke-GitCommit "Version $version" -Verbose
+Invoke-GitCommit "Winium WebDriver version $version" -Verbose
 Invoke-Git ('push', 'origin', 'master') -Verbose
 
 # Git tag and push
 $buildUrl = $env:BUILD_URL
-Invoke-GitTag "Version '$version'. Build url '$buildUrl'." "v$version" -Verbose
+Invoke-GitTag "Winium WebDriver version '$version'. Build url '$buildUrl'." "v$version" -Verbose
 Invoke-Git ('push', 'origin', 'master', "v$version") -Verbose
 
 # Push nuget-package
 $package = Join-Path $releaseDir '*.nupkg'
 Invoke-NuGetPush $package -Verbose
-
-# Create github release
-Invoke-CreateGitHubRelease '2gis' $githubProjectName $version $description $releaseDir -Verbose

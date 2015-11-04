@@ -11,10 +11,9 @@ $solutionDir = Join-Path $PSScriptRoot "../src"
 $solution = Join-Path $solutionDir 'Winium.sln'
 $project = Join-Path $solutionDir 'OpenQA.Selenium.Winium\OpenQA.Selenium.Winium.csproj'
 $releaseDir = Join-Path $PSScriptRoot '../Release'
-$assemblyInfoPath = Join-Path $solutionDir 'Winium.Driver\Properties\AssemblyInfo.cs'
+$assemblyInfoPath = Join-Path $solutionDir 'OpenQA.Selenium.Winium\Properties\AssemblyInfo.cs'
 $changelogPath = Join-Path $PSScriptRoot '..\CHANGELOG.md'
 $nuspecPath = Join-Path $solutionDir 'OpenQA.Selenium.Winium\OpenQA.Selenium.Winium.nuspec'
-$githubProjectName = 'Winium'
 
 $msbuildProperties = @{
     'Configuration' = $configuration

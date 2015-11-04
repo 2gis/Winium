@@ -8,9 +8,9 @@
     <projectUrl>https://github.com/2gis/Winium</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <dependecies>
-      <dependency id="Selenium.WebDriver" version="[2.48.0]" targetFramework="net45" />
-    </dependecies>
+    <dependencies>
+      <dependency id="Selenium.WebDriver" version="[2.48.0]" />
+    </dependencies>
     <releaseNotes>
     </releaseNotes>
     <copyright>Copyright @ 2015</copyright>
