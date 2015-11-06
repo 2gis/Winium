@@ -101,6 +101,28 @@
             this.InitWiniumDriverCommands();
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="WiniumDriver"/> class using the specified remote address and options.
+        /// </summary>
+        /// <param name="remoteAddress">URI containing the address of the WiniumDriver remote server (e.g. http://127.0.0.1:4444/wd/hub).</param>
+        /// <param name="options">The <see cref="IWiniumOptions"/> object to be used with the Winium driver.</param>
+        public WiniumDriver(Uri remoteAddress, IWiniumOptions options)
+            : this(remoteAddress, options, RemoteWebDriver.DefaultCommandTimeout)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="WiniumDriver"/> class using the specified remote address, desired capabilities, and command timeout.
+        /// </summary>
+        /// <param name="remoteAddress">URI containing the address of the WiniumDriver remote server (e.g. http://127.0.0.1:4444/wd/hub).</param>
+        /// <param name="options">The <see cref="IWiniumOptions"/> object to be used with the Winium driver.</param>
+        /// <param name="commandTimeout">The maximum amount of time to wait for each command.</param>
+        public WiniumDriver(Uri remoteAddress, IWiniumOptions options, TimeSpan commandTimeout)
+            : base(CommandExecutorFactory.GetHttpCommandExecutor(remoteAddress, commandTimeout), options.ToCapabilities())
+        {
+            this.InitWiniumDriverCommands();
+        }
+
         #endregion
 
         #region Methods
