@@ -24,7 +24,7 @@
         public WiniumDriverCommandExecutor(WiniumDriverService driverService, TimeSpan commandTimeout)
         {
             this.service = driverService;
-            this.internalExecutor = GetHttpCommandExecutor(driverService.ServiceUrl, commandTimeout);
+            this.internalExecutor = CommandExecutorFactory.GetHttpCommandExecutor(driverService.ServiceUrl, commandTimeout);
         }
 
         #endregion
@@ -66,25 +66,6 @@
                     this.service.Dispose();
                 }
             }
-        }
-
-        #endregion
-
-        #region Methods
-
-        private static ICommandExecutor GetHttpCommandExecutor(Uri remoteAddress, TimeSpan commandTimeout)
-        {
-            var seleniumAssembly = Assembly.Load("WebDriver");
-            var commandType = seleniumAssembly.GetType("OpenQA.Selenium.Remote.HttpCommandExecutor");
-            ICommandExecutor commandExecutor = null;
-
-            if (null != commandType)
-            {
-                commandExecutor =
-                    Activator.CreateInstance(commandType, new object[] { remoteAddress, commandTimeout }) as ICommandExecutor;
-            }
-
-            return commandExecutor;
         }
 
         #endregion

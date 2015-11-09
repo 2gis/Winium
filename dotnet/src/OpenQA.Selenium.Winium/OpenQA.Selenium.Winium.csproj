@@ -40,6 +40,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandExecutorFactory.cs" />
     <Compile Include="DesktopOptions.cs" />
     <Compile Include="IWiniumOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
