@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.2gis.winium</groupId>
+    <artifactId>winium-web-driver</artifactId>
+    <version>0.1.0-1</version>
+
+    <name>Winium.WebDriver</name>
+    <url>https://github.com/2gis/Winium/tree/master/java</url>
+    <description>Winium.WebDriver retains the functionality of common driver and has specific methods for
+        interaction with the Winium Driver.</description>
+    <licenses>
+        <license>
+            <name>Mozilla Public License, version 2.0</name>
+            <url>https://www.mozilla.org/en-US/MPL/2.0/</url>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/2gis/Winium/</url>
+    </scm>
+    <developers>
+        <developer>
+            <name>Artem Pryanichnikov</name>
+            <url>https://github.com/zebraxxl</url>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>2.48.2</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
