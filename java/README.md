@@ -19,7 +19,7 @@ Winium.WebDriver retains the functionality of common driver and has specific met
     <dependencies>
         <dependency>
             <groupId>com.github.2gis.winium</groupId>
-            <artifactId>winium-web-driver</artifactId>
+            <artifactId>winium-webdriver</artifactId>
             <version>0.1.0-1</version>
         </dependency>
     </dependencies>
