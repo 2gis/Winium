@@ -30,20 +30,19 @@ Winium.Desktop это open-source инструмент для автоматиз
 - WPF
 
 
-# [Winium for Store Apps](https://github.com/2gis/Winium.StoreApps)
-[![Inner Server NuGet downloads](https://img.shields.io/nuget/dt/Winium.StoreApps.InnerServer.svg?style=flat-square)](https://www.nuget.org/packages/Winium.StoreApps.InnerServer/)
-[![Inner Server NuGet version](https://img.shields.io/nuget/v/Winium.StoreApps.InnerServer.svg?style=flat-square)](https://www.nuget.org/packages/Winium.StoreApps.InnerServer/)
+# [Winium for Mobile](https://github.com/2gis/Winium.Mobile)
+[![Winium.StoreApps.InnerServer Inner Server NuGet version](https://img.shields.io/nuget/v/Winium.StoreApps.InnerServer.svg?style=flat-square&label=nuget%20storeapps)](https://www.nuget.org/packages/Winium.StoreApps.InnerServer/)
+[![Winium.Silverlight.InnerServer NuGet version](https://img.shields.io/nuget/v/Winium.Silverlight.InnerServer.svg?style=flat-square&label=nuget%20silverlight)](https://www.nuget.org/packages/Winium.Silverlight.InnerServer/)
 [![GitHub release](https://img.shields.io/github/release/2gis/Winium.StoreApps.svg?style=flat-square)](https://github.com/2gis/Winium.StoreApps/releases/)
 [![GitHub license](https://img.shields.io/badge/license-MPL 2.0-blue.svg?style=flat-square)](LICENSE)
 
 
-Winium.StoreApps это open-source инструмент для автоматизации Windows Store приложений, тестируемых на эмуляторах (пока поддерживаются только Windows Phone приложения).
+Winium.Mobile это open-source инструмент для автоматизации Windows Store и Silverlight мобильных приложений, тестируемых на эмуляторах (поддерживаются Windows Phone 8.1 и Windows 10 Mobile приложения).
 
 ### Поддерживаемые платформы
 - Windows Phone 8.1 Store Apps (or Universal App for Windows Phone)
+- Windows Phone 8.1 Silverlight apps
+- Windows 10 Mobile (there are some known [issues](https://github.com/2gis/Winium.Mobile/labels/windows10))
 
-# [Windows Phone Driver](https://github.com/2gis/winphonedriver)
-Windows Phone Driver это open-source инструмент для автоматизации Windows Phone 8.1 Silverlight приложений, тестируемых на эмуляторах.
-
-### Поддерживаемые платформы
-- Windows Phone 8.1 Silverlight
+# [Winium.Mobile CodedUI Driver](https://github.com/2gis/winium.storeapps.codedui)
+Прототип Winium Mobile драйвера на основе CodedUI. Реализует Selenium Remote WebDriver implementation для автоматизации Windows Phone 8.1 и Windows 10 Mobile приложений.
