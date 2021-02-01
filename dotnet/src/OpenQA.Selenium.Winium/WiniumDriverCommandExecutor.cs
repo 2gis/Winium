@@ -39,6 +39,10 @@
             }
         }
 
+        public void Dispose()
+        {
+        }
+
         #endregion
 
         #region Public Methods and Operators
