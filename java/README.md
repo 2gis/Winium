@@ -40,10 +40,10 @@ Winium.WebDriver retains the functionality of common driver and has specific met
 	Use the native WiniumDriver executable:
 	```java
 	WiniumDriverService service = new WiniumDriverService.Builder()
-                                         .usingDriverExecutable("path_to_driver_executable")
+                                         .usingDriverExecutable(new File("path_to_driver_executable"))
                                          .usingAnyFreePort()
                                          .withVerbose(true)
-                                         .withSilent(false);
+                                         .withSilent(false)
                                          .buildDesktopService();
 
 	WiniumDriver driver = new WiniumDriver(service, options);
