@@ -1,0 +1,47 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        test: [1,2,3,4,5,6,7,8,9,10]
+        test1: [1,2,3,4,5,6,7,8,9,10]
+        test3: [1,2,3,4,5,6,7,8,9,10]
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes2 }}"
+          echo "${{ matrix.test3 }}"
+  my_jab_1:
+    name: deploy to staging1
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        test: [1,2,3,4,5,6,7,8,9,10]
+        test1: [1,2,3,4,5,6,7,8,9,10]
+        test13: [1,2,3,4,5,6,7,8,9,10]
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes2 }}"
+          echo "${{ matrix.test3 }}"
