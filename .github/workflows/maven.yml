@@ -18,6 +18,11 @@ jobs:
   my_job:
     name: deploy to staging
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test: [1,2,3,4,5,6,7,8,9,10]
+        test1: [1,2,3,4,5,6,7,8,9,10]
+        test2: [1,2]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
@@ -30,6 +35,11 @@ jobs:
   my_jab_1:
     name: deploy to staging1
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test: [1,2,3,4,5,6,7,8,9,10]
+        test1: [1,2,3,4,5,6,7,8,9,10]
+        test2: [1,2]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
@@ -42,6 +52,11 @@ jobs:
   my_jab_2:
     name: deploy to staging2
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test: [1,2,3,4,5,6,7,8,9,10]
+        test1: [1,2,3,4,5,6,7,8,9,10]
+        test2: [1,2,3]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
@@ -54,6 +69,11 @@ jobs:
   my_jab_3:
     name: deploy to staging3
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test: [1,2,3,4,5,6,7,8,9,10]
+        test1: [1,2,3,4,5,6,7,8,9,10]
+        test2: [1,2]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
@@ -66,6 +86,11 @@ jobs:
   my_jab_4:
     name: deploy to staging4
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test: [1,2,3,4,5,6,7,8,9,10]
+        test1: [1,2,3,4,5,6,7,8,9,10]
+        test2: [1,2]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
