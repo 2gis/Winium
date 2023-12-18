@@ -18,70 +18,54 @@ jobs:
   my_job:
     name: deploy to staging
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test: [1,2,3,4,5,6,7,8,9,10]
-        test1: [1,2,3,4,5,6,7,8,9,10]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.test }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test2 }}"
   my_jab_1:
     name: deploy to staging1
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test: [1,2,3,4,5,6,7,8,9,10]
-        test1: [1,2,3,4,5,6,7,8,9,10]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
   my_jab_2:
     name: deploy to staging2
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test: [1,2,3,4,5,6,7,8,9,10]
-        test1: [1,2,3,4,5,6,7,8,9,10]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
   my_jab_3:
     name: deploy to staging3
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test: [1,2,3,4,5,6,7,8,9,10]
-        test1: [1,2,3,4,5,6,7,8,9,10]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
   my_jab_4:
     name: deploy to staging4
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test: [1,2,3,4,5,6,7,8,9,10]
-        test1: [1,2,3,4,5,6,7,8,9,10]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
@@ -98,6 +82,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -109,6 +94,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -120,6 +106,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -131,6 +118,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -142,6 +130,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -153,6 +142,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -164,6 +154,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.test }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test2 }}"
@@ -175,6 +166,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -186,6 +178,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -197,6 +190,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -208,6 +202,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -219,6 +214,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -230,6 +226,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -241,6 +238,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -252,6 +250,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -263,6 +262,7 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
@@ -274,6 +274,19 @@ jobs:
     - name: echoing
       run: |
           echo "test"
+          echo sleep 20s
+          echo "${{ matrix.tes }}"
+          echo "${{ matrix.test1 }}"
+          echo "${{ matrix.test3 }}"
+  my_jab_22:
+    name: deploy to staging22
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo sleep 20s
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
