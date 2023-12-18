@@ -37,3 +37,102 @@ jobs:
           echo "${{ matrix.tes }}"
           echo "${{ matrix.test1 }}"
           echo "${{ matrix.test3 }}"
+  my_jab_2:
+    name: deploy to staging2
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes }}"
+          echo "${{ matrix.test1 }}"
+          echo "${{ matrix.test3 }}"
+  my_jab_3:
+    name: deploy to staging3
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes }}"
+          echo "${{ matrix.test1 }}"
+          echo "${{ matrix.test3 }}"
+  my_jab_4:
+    name: deploy to staging4
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes }}"
+          echo "${{ matrix.test1 }}"
+          echo "${{ matrix.test3 }}"
+  my_jab_5:
+    name: deploy to staging5
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes }}"
+          echo "${{ matrix.test1 }}"
+          echo "${{ matrix.test3 }}"
+  my_jab_6:
+    name: deploy to staging6
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes }}"
+          echo "${{ matrix.test1 }}"
+          echo "${{ matrix.test3 }}"
+  my_jab_7:
+    name: deploy to staging7
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes }}"
+          echo "${{ matrix.test1 }}"
+          echo "${{ matrix.test3 }}"
+  my_jab_8:
+    name: deploy to staging8
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes }}"
+          echo "${{ matrix.test1 }}"
+          echo "${{ matrix.test3 }}"
+  my_jab_9:
+    name: deploy to staging9
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes }}"
+          echo "${{ matrix.test1 }}"
+          echo "${{ matrix.test3 }}"
+  my_jab_10:
+    name: deploy to staging10
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: echoing
+      run: |
+          echo "test"
+          echo "${{ matrix.tes }}"
+          echo "${{ matrix.test1 }}"
+          echo "${{ matrix.test3 }}"
