@@ -18,6 +18,9 @@ jobs:
   my_job:
     name: deploy to staging
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test: [1,2,3,4,5,6,7,8,9,10]
     steps:
     - uses: actions/checkout@v1
     - name: echoing
