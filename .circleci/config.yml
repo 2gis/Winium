@@ -4,7 +4,7 @@ jobs:
   job1:
     parameters:
         test1: 
-          type: String
+          type: string
     docker:
       - image: cimg/base:stable
     steps:
@@ -15,7 +15,7 @@ jobs:
   job2:
     parameters:
         test1: 
-          type: String
+          type: string
     docker:
       - image: cimg/base:stable
     steps:
