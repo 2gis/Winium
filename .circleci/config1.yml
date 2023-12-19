@@ -9,7 +9,7 @@ jobs:
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World! << parameters.test1 >>"
+          command: "echo Hello, World! test1"
 
   job2:
     docker:
@@ -19,7 +19,7 @@ jobs:
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World! << parameters.test1 >>"
+          command: "echo Hello, World! test2"
 
 workflows:
   say-hello-workflow:
