@@ -14,8 +14,8 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+        name: "Say hello"
+        command: "echo Hello, World!"
         matrix:
           test1:
             - test1
@@ -30,8 +30,8 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+        name: "Say hello"
+        command: "echo Hello, World!"
         matrix:
           test2:
             - test1
