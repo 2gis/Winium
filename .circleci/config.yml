@@ -14,13 +14,13 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - run:
-        name: "Say hello"
-        command: "echo Hello, World!"
-        matrix:
-          test1:
-            - test1
-            - test2
-            - test3
+          name: "Say hello"
+          command: "echo Hello, World!"
+          matrix:
+            test1:
+              - test1
+              - test2
+              - test3
   say-hello1:
     # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/configuration-reference/#executor-job
@@ -30,13 +30,13 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - run:
-        name: "Say hello"
-        command: "echo Hello, World!"
-        matrix:
-          test2:
-            - test1
-            - test2
-            - test3
+          name: "Say hello"
+          command: "echo Hello, World!"
+          matrix:
+            test2:
+              - test1
+              - test2
+              - test3
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
