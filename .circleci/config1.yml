@@ -4,8 +4,7 @@ jobs:
   job1:
     docker:
       - image: cimg/base:stable
-    parallelism: 4
-    resource_class: large
+    parallelism: 30
     steps:
       - run:
           name: "Say hello"
@@ -14,8 +13,7 @@ jobs:
   job2:
     docker:
       - image: cimg/base:stable
-    parallelism: 4
-    resource_class: large
+    parallelism: 30
     steps:
       - run:
           name: "Say hello"
