@@ -15,7 +15,7 @@ jobs:
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World!"
+          command: "echo Hello, World! << matrix.test1 >>"
           matrix:
             test1:
               - test1
@@ -31,7 +31,7 @@ jobs:
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World!"
+          command: "echo Hello, World! << matrix.test1 >>"
           matrix:
             test2:
               - test1
