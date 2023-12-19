@@ -2,39 +2,27 @@ version: 2.1
 
 jobs:
   job1:
-    parameters:
-        test1: 
-          type: string
     docker:
       - image: cimg/base:stable
-    parallelism: 4
+    parallelism: 30
     resource_class: large
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World! << parameters.test1 >>"
+          command: "echo Hello, World! test1"
 
   job2:
-    parameters:
-        test1: 
-          type: string
     docker:
       - image: cimg/base:stable
-    parallelism: 4
+    parallelism: 30
     resource_class: large
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World! << parameters.test1 >>"
+          command: "echo Hello, World! test2"
 
 workflows:
   say-hello-workflow:
     jobs:
-      - job1:
-          matrix:
-            parameters:
-              test1: ["test1", "test2", "test3"]
-      - job2:
-          matrix:
-            parameters:
-              test1: ["test1", "test2", "test3"]
+      - job1
+      - job2
