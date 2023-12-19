@@ -17,7 +17,6 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-    strategy:
       matrix:
         test1:
           - test1
@@ -35,7 +34,6 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-    strategy:
       matrix:
         test2:
           - test1
