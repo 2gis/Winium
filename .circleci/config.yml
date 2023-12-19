@@ -5,8 +5,9 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - name: "Say hello"
-        run: "echo Hello, World! $test1"
+      - run:
+          name: "Say hello"
+          command: "echo Hello, World! $test1"
         with:
           test1: ["test1", "test2", "test3"]
 
@@ -14,8 +15,9 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - name: "Say hello"
-        run: "echo Hello, World! $test1"
+      - run:
+          name: "Say hello"
+          command: "echo Hello, World! $test1"
         with:
           test1: ["test1", "test2", "test3"]
 
