@@ -10,7 +10,7 @@ jobs:
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World! << matrix.test1 >>"
+          command: "echo Hello, World! << parameters.test1 >>"
 
   job2:
     parameters:
@@ -21,7 +21,7 @@ jobs:
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World! << matrix.test1 >>"
+          command: "echo Hello, World! << parameters.test1 >>"
 
 workflows:
   say-hello-workflow:
