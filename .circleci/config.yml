@@ -31,7 +31,7 @@ jobs:
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World! << matrix.test1 >>"
+          command: "echo Hello, World! << matrix.test2 >>"
           matrix:
             test2:
               - test1
