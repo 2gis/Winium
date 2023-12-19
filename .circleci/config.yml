@@ -2,30 +2,26 @@ version: 2.1
 
 jobs:
   job1:
+    parameters:
+        test1: 
+          type: String
     docker:
       - image: cimg/base:stable
     steps:
       - run:
           name: "Say hello"
           command: "echo Hello, World! << matrix.test1 >>"
-
-    # Define the matrix at the job level
-      parameters:
-        test1: 
-          type: String
 
   job2:
+    parameters:
+        test1: 
+          type: String
     docker:
       - image: cimg/base:stable
     steps:
       - run:
           name: "Say hello"
           command: "echo Hello, World! << matrix.test1 >>"
-
-    # Define the matrix at the job level
-      parameters:
-        test1: 
-          type: String
 
 workflows:
   say-hello-workflow:
