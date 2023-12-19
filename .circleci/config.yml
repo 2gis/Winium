@@ -7,11 +7,11 @@ jobs:
           type: string
     docker:
       - image: cimg/base:stable
-    parallelism: 10
+    parallelism: 30
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World! << parameters.test1 >>"
+          command: "sleep 2m"
 
   job2:
     parameters:
@@ -19,11 +19,11 @@ jobs:
           type: string
     docker:
       - image: cimg/base:stable
-    parallelism: 10
+    parallelism: 30
     steps:
       - run:
           name: "Say hello"
-          command: "echo Hello, World! << parameters.test1 >>"
+          command: "sleep 2m"
 
 workflows:
   say-hello-workflow:
