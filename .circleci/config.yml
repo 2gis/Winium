@@ -17,6 +17,30 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+    strategy:
+      matrix:
+        test1:
+          - test1
+          - test2
+          - test3
+  say-hello1:
+    # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
+    # See: https://circleci.com/docs/configuration-reference/#executor-job
+    docker:
+      - image: cimg/base:stable
+    # Add steps to the job
+    # See: https://circleci.com/docs/configuration-reference/#steps
+    steps:
+      - checkout
+      - run:
+          name: "Say hello"
+          command: "echo Hello, World!"
+    strategy:
+      matrix:
+        test2:
+          - test1
+          - test2
+          - test3
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
@@ -24,3 +48,10 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      - say-hello1
+    strategy:
+      matrix:
+        test3:
+          - test1
+          - test2
+          - test3
