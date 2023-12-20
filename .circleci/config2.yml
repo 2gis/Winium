@@ -1,0 +1,163 @@
+version: 2.1
+
+jobs:
+  job1:
+    parameters:
+        test1: 
+          type: string
+    docker:
+      - image: cimg/base:stable
+    parallelism: 1000
+    steps:
+      - run:
+          name: "Say hello"
+          command: "sleep 30s"
+      - run:
+          name: "Say hello1"
+          command: "sleep 30s"
+      - run:
+          name: "Say hello2"
+          command: "sleep 30s"
+
+  job2:
+    parameters:
+        test1: 
+          type: string
+    docker:
+      - image: cimg/base:stable
+    parallelism: 5
+    steps:
+      - run:
+          name: "Say hello"
+          command: "sleep 30s"
+  job3:
+    parameters:
+        test1: 
+          type: string
+    docker:
+      - image: cimg/base:stable
+    parallelism: 5
+    steps:
+      - run:
+          name: "Say hello"
+          command: "sleep 30s"
+  job4:
+    parameters:
+        test1: 
+          type: string
+    docker:
+      - image: cimg/base:stable
+    parallelism: 5
+    steps:
+      - run:
+          name: "Say hello"
+          command: "sleep 30s"
+  job5:
+    parameters:
+        test1: 
+          type: string
+    docker:
+      - image: cimg/base:stable
+    parallelism: 5
+    steps:
+      - run:
+          name: "Say hello"
+          command: "sleep 30s"
+  job6:
+    parameters:
+        test1: 
+          type: string
+    docker:
+      - image: cimg/base:stable
+    parallelism: 5
+    steps:
+      - run:
+          name: "Say hello"
+          command: "sleep 30s"
+  job7:
+    parameters:
+        test1: 
+          type: string
+    docker:
+      - image: cimg/base:stable
+    parallelism: 5
+    steps:
+      - run:
+          name: "Say hello"
+          command: "sleep 30s"
+  job8:
+    parameters:
+        test1: 
+          type: string
+    docker:
+      - image: cimg/base:stable
+    parallelism: 5
+    steps:
+      - run:
+          name: "Say hello"
+          command: "sleep 30s"
+  job9:
+    parameters:
+        test1: 
+          type: string
+    docker:
+      - image: cimg/base:stable
+    parallelism: 5
+    steps:
+      - run:
+          name: "Say hello"
+          command: "sleep 30s"
+  job10:
+    parameters:
+        test1: 
+          type: string
+    docker:
+      - image: cimg/base:stable
+    parallelism: 5
+    steps:
+      - run:
+          name: "Say hello"
+          command: "sleep 30s"
+workflows:
+  say-hello-workflow:
+    jobs:
+      - job1:
+          matrix:
+            parameters:
+              test1: ["test1", "test2", "test3"]
+      - job2:
+          matrix:
+            parameters:
+              test1: ["test1", "test2", "test3"]
+      - job3:
+            matrix:
+              parameters:
+                test1: ["test1", "test2", "test3"]
+      - job4:
+            matrix:
+              parameters:
+                test1: ["test1", "test2", "test3"]
+      - job5:
+            matrix:
+              parameters:
+                test1: ["test1", "test2", "test3"]
+      - job6:
+            matrix:
+              parameters:
+                test1: ["test1", "test2", "test3"]
+      - job7:
+            matrix:
+              parameters:
+                test1: ["test1", "test2", "test3"]
+      - job8:
+            matrix:
+              parameters:
+                test1: ["test1", "test2", "test3"]
+      - job9:
+            matrix:
+              parameters:
+                test1: ["test1", "test2", "test3"]
+      - job10:
+            matrix:
+              parameters:
+                test1: ["test1", "test2", "test3"]
