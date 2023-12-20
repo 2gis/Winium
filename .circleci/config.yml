@@ -120,5 +120,8 @@ jobs:
           command: "sleep 30s"
 workflows:
   say-hello-workflow:
-    jobs:
-      - job1
+      jobs:
+      - job1:
+          matrix:
+            parameters:
+              test1: ["test1"]
