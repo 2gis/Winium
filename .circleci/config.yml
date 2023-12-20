@@ -7,10 +7,18 @@ jobs:
           type: string
     docker:
       - image: cimg/base:stable
-    parallelism: 30
+    parallelism: 5
     steps:
       - run:
           name: "Say hello"
+          command: "sleep 30s"
+          parallelism: 30
+      - run:
+          name: "Say hello1"
+          command: "sleep 30s"
+          parallelism: 30
+      - run:
+          name: "Say hello2"
           command: "sleep 30s"
           parallelism: 30
 
@@ -20,7 +28,7 @@ jobs:
           type: string
     docker:
       - image: cimg/base:stable
-    parallelism: 30
+    parallelism: 5
     steps:
       - run:
           name: "Say hello"
