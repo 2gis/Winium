@@ -4,7 +4,7 @@ jobs:
   job1:
     docker:
       - image: cimg/base:stable
-    parallelism: 10
+    parallelism: 30
     steps:
       - run:
           name: "Say hello"
