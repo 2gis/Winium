@@ -2,6 +2,9 @@ version: 2.1
 
 jobs:
   job1:
+    parameters:
+        test1: 
+          type: string    
     docker:
       - image: cimg/base:stable
     parallelism: 30
