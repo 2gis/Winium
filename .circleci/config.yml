@@ -12,6 +12,7 @@ jobs:
       - run:
           name: "Say hello"
           command: "sleep 2m"
+          parallelism: 30
 
   job2:
     parameters:
