@@ -7,7 +7,7 @@ jobs:
           type: string
     docker:
       - image: cimg/base:stable
-    parallelism: 1000
+    parallelism: 257
     steps:
       - run:
           name: "Say hello"
@@ -125,39 +125,3 @@ workflows:
           matrix:
             parameters:
               test1: ["test1", "test2", "test3"]
-      - job2:
-          matrix:
-            parameters:
-              test1: ["test1", "test2", "test3"]
-      - job3:
-            matrix:
-              parameters:
-                test1: ["test1", "test2", "test3"]
-      - job4:
-            matrix:
-              parameters:
-                test1: ["test1", "test2", "test3"]
-      - job5:
-            matrix:
-              parameters:
-                test1: ["test1", "test2", "test3"]
-      - job6:
-            matrix:
-              parameters:
-                test1: ["test1", "test2", "test3"]
-      - job7:
-            matrix:
-              parameters:
-                test1: ["test1", "test2", "test3"]
-      - job8:
-            matrix:
-              parameters:
-                test1: ["test1", "test2", "test3"]
-      - job9:
-            matrix:
-              parameters:
-                test1: ["test1", "test2", "test3"]
-      - job10:
-            matrix:
-              parameters:
-                test1: ["test1", "test2", "test3"]
