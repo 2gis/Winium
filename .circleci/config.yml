@@ -11,7 +11,7 @@ jobs:
     steps:
       - run:
           name: "Say hello"
-          command: "sleep 2m"
+          command: "sleep 30s"
           parallelism: 30
 
   job2:
@@ -24,7 +24,7 @@ jobs:
     steps:
       - run:
           name: "Say hello"
-          command: "sleep 2m"
+          command: "sleep 30s"
 
 workflows:
   say-hello-workflow:
