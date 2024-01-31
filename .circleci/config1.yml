@@ -1,0 +1,28 @@
+version: 2.1
+
+jobs:
+  job1:
+    docker:
+      - image: cimg/base:stable
+    parallelism: 30
+    resource_class: large
+    steps:
+      - run:
+          name: "Say hello"
+          command: "echo Hello, World! test1"
+
+  job2:
+    docker:
+      - image: cimg/base:stable
+    parallelism: 30
+    resource_class: large
+    steps:
+      - run:
+          name: "Say hello"
+          command: "echo Hello, World! test2"
+
+workflows:
+  say-hello-workflow:
+    jobs:
+      - job1
+      - job2
